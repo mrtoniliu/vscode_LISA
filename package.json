@@ -1,0 +1,26 @@
+{
+    "name": "lisa",
+    "displayName": "LISA",
+    "description": "LISA+ Support",
+    "version": "0.0.1",
+    "publisher": "tonyliu",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lisa",
+            "aliases": ["LISA+", "lisa"],
+            "extensions": [".lisa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lisa",
+            "scopeName": "source.lisa",
+            "path": "./syntaxes/lisa.tmLanguage"
+        }]
+    }
+}

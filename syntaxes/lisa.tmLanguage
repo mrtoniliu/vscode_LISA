@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>lisa</string>
+	</array>
+	<key>name</key>
+	<string>LISA</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.cpp</string>
+		</dict>
+        <dict>
+            <key>match</key>
+            <string>\b(component|protocol)\b</string>
+            <key>name</key>
+            <string>support.class</string>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>\b(properties|resources|composition|connection|includes|debug)\b</string>
+            <key>name</key>
+            <string>storage.type</string>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>\b(behaviour|behavior)\b</string>
+            <key>name</key>
+            <string>support.function</string>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>\b(slave|master|peer|optional|internal|addressable)\b</string>
+            <key>name</key>
+            <string>entity.other.attribute-name</string>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>\b(port|ADDRESS|PARAMETER)\b</string>
+            <key>name</key>
+            <string>entity.name.type</string>
+        </dict>
+
+	</array>
+	<key>scopeName</key>
+	<string>source.lisa</string>
+	<key>uuid</key>
+	<string>26251B18-6B1D-11D9-AFDB-000D93589AF6</string>
+</dict>
+</plist>
